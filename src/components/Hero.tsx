@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { ArrowRight, Mail, Sparkles, Terminal, Cpu, Network, Layers, Film } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/SocialIcons";
 import { PORTFOLIO_DATA } from "@/data/portfolio";
@@ -158,7 +159,7 @@ export const Hero: React.FC = () => {
                 </span>
               </div>
 
-              {/* Central Neural Node & Orbit System */}
+              {/* Central Neural Node & Profile Portrait */}
               <div className="relative aspect-square max-w-[260px] sm:max-w-[300px] mx-auto flex items-center justify-center my-1">
                 
                 {/* SVG Connecting Beam Network */}
@@ -170,16 +171,23 @@ export const Hero: React.FC = () => {
                   <circle cx="150" cy="150" r="110" stroke="rgba(255,255,255,0.06)" fill="none" strokeWidth="1" />
                 </svg>
 
-                {/* Central GS AI Core */}
-                <div className="relative z-10 w-24 h-24 rounded-2xl bg-gradient-to-br from-[#0D1220] to-[#080B14] border border-white/20 shadow-2xl flex flex-col items-center justify-center p-2 group hover:border-[#8B5CF6]/50 transition-colors">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#8B5CF6]/30 to-[#38BDF8]/20 border border-white/15 flex items-center justify-center mb-1">
-                    <span className="font-heading font-black text-base text-gradient">
-                      GS
-                    </span>
+                {/* Central GS Core with Genuine Profile Picture */}
+                <div className="relative z-10 w-28 h-28 sm:w-32 sm:h-32 rounded-3xl p-1 bg-gradient-to-tr from-[#8B5CF6] via-[#38BDF8] to-[#22D3EE] shadow-2xl group transition-transform hover:scale-105">
+                  <div className="w-full h-full rounded-[22px] overflow-hidden bg-[#0D1220] relative border border-white/20">
+                    <Image
+                      src="/profile.jpeg"
+                      alt="Ganesh Singh - Aspiring AI/ML Engineer"
+                      width={128}
+                      height={128}
+                      priority
+                      className="w-full h-full object-cover object-top filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-x-0 bottom-0 py-1 bg-gradient-to-t from-[#080B14]/95 via-[#080B14]/70 to-transparent flex flex-col items-center">
+                      <span className="text-[10px] font-mono font-bold text-[#F8FAFC] leading-none drop-shadow">
+                        Ganesh Singh
+                      </span>
+                    </div>
                   </div>
-                  <span className="text-[10px] font-mono font-medium text-[#F8FAFC]">
-                    AI Engine
-                  </span>
                 </div>
 
                 {/* Node 1: Top-Left (GenAI & Agentic) */}

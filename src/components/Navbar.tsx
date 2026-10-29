@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/SocialIcons";
 import { PORTFOLIO_DATA } from "@/data/portfolio";
@@ -73,15 +74,21 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
             : "bg-[#080B14]/70 backdrop-blur-lg border-white/10 shadow-lg shadow-black/30"
         }`}
       >
-        {/* Brand / Logo */}
+        {/* Brand / Logo with Profile Photo */}
         <a
           href="#hero"
           onClick={(e) => handleNavClick(e, "#hero")}
           aria-label="Ganesh Singh - Home"
           className="flex items-center gap-2.5 sm:gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#8B5CF6] rounded-xl p-1"
         >
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/15 flex items-center justify-center font-heading font-bold text-xs tracking-wider text-gradient group-hover:border-[#8B5CF6]/50 group-hover:scale-105 transition-all shadow-inner shrink-0">
-            GS
+          <div className="w-9 h-9 rounded-xl overflow-hidden border border-white/20 group-hover:border-[#8B5CF6]/60 group-hover:scale-105 transition-all shadow-md shrink-0 bg-white/5 relative">
+            <Image
+              src="/profile.jpeg"
+              alt="Ganesh Singh"
+              width={36}
+              height={36}
+              className="w-full h-full object-cover object-top"
+            />
           </div>
           <div className="flex flex-col text-left">
             <span className="font-heading font-semibold text-sm sm:text-base text-[#F8FAFC] tracking-tight group-hover:text-[#38BDF8] transition-colors leading-tight">
@@ -147,7 +154,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           </a>
         </div>
 
-        {/* Mobile Hamburger Button (Strictly sized for touch targets) */}
+        {/* Mobile Hamburger Button */}
         <div className="flex sm:hidden items-center">
           <button
             type="button"
