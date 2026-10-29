@@ -1,0 +1,1306 @@
+# ROLE AND OBJECTIVE
+
+Act as a Senior UI/UX Designer, Senior Frontend Engineer, Creative Developer, and Technical SEO Specialist.
+
+Build a complete, production-quality personal portfolio website for **Ganesh Singh**, an M.Sc. Artificial Intelligence student at Parul University, Vadodara, Gujarat, India.
+
+The portfolio should present me as an aspiring AI/ML Engineer, Generative AI Developer, and Software Engineer.
+
+This is not a generic student portfolio. Create a premium, futuristic, technically sophisticated portfolio that demonstrates my AI knowledge, practical projects, certifications, and software development skills.
+
+The finished website must be visually polished, responsive, accessible, fast, functional, and ready to deploy.
+
+Do not stop after creating a design mockup. Implement the actual working application.
+
+Before coding:
+1. Inspect the existing repository and its current structure.
+2. Identify the installed framework, dependencies, and existing components.
+3. Reuse existing working code where appropriate.
+4. If the repository is empty, initialize a suitable frontend project.
+5. Create a short implementation plan.
+6. Implement the website section by section.
+7. Run the application, inspect it, and fix errors before finishing.
+
+Do not overwrite existing project files blindly.
+
+---
+
+# 1. DESIGN VISION
+
+## Design concept
+
+Create a futuristic AI developer portfolio using:
+
+- Premium dark-mode glassmorphism.
+- Selective neumorphic surfaces.
+- Soft glowing gradients.
+- Subtle animated backgrounds.
+- Modern typography.
+- Floating glass cards.
+- Elegant borders and shadows.
+- Smooth micro-interactions.
+- Technical visual elements inspired by AI neural networks and digital systems.
+
+The website should look like a combination of a modern AI startup landing page, a premium developer portfolio, and a sophisticated technical dashboard.
+
+Avoid the appearance of a generic portfolio template.
+
+The visual experience should communicate:
+
+- Artificial Intelligence.
+- Technical curiosity.
+- Innovation.
+- Engineering capability.
+- Professionalism.
+- Clean execution.
+
+## Visual inspiration
+
+Use the following as general design references, not as templates to copy:
+
+- Apple-inspired minimalism and typography.
+- Linear-inspired dark interfaces.
+- Vercel-inspired developer aesthetics.
+- Modern AI SaaS landing pages.
+- High-quality glassmorphism interfaces.
+
+Maintain a consistent visual language across the entire website.
+
+## Important design rule
+
+Use glassmorphism as the primary design language and neumorphism only for selected elements.
+
+Do not apply excessive blur, glow, shadows, gradients, or animations.
+
+The design must remain readable, professional, and usable.
+
+---
+
+# 2. COLOR SYSTEM
+
+Create a centralized design system using CSS variables.
+
+Suggested colors:
+
+Background:
+- Main background: #080B14
+- Secondary background: #0D1220
+- Section background: #0B1020
+
+Glass surfaces:
+- Glass background: rgba(255, 255, 255, 0.045)
+- Elevated glass background: rgba(255, 255, 255, 0.075)
+- Glass border: rgba(255, 255, 255, 0.12)
+
+Primary accent:
+- Electric violet: #8B5CF6
+- Neon blue: #38BDF8
+
+Secondary accent:
+- Cyan: #22D3EE
+- Soft lavender: #C4B5FD
+
+Text:
+- Primary text: #F8FAFC
+- Secondary text: #CBD5E1
+- Muted text: #94A3B8
+
+Success:
+- Soft green: #34D399
+
+Use violet and cyan sparingly for important highlights, buttons, active navigation states, and interactive elements.
+
+Create subtle gradients such as:
+
+linear-gradient(135deg, #8B5CF6, #38BDF8)
+
+Use gradients primarily for selected text highlights, decorative elements, and primary calls to action.
+
+Avoid making every card colorful.
+
+---
+
+# 3. TYPOGRAPHY
+
+Use a modern typography system.
+
+Preferred fonts:
+- Headings: Space Grotesk.
+- Body text: Inter.
+- Technical labels: JetBrains Mono.
+
+Load fonts efficiently using a reliable font provider or locally available assets.
+
+Typography guidelines:
+
+- Large, bold hero heading.
+- Strong contrast between headings and supporting text.
+- Comfortable line height.
+- Consistent spacing.
+- Short paragraphs.
+- Readable project descriptions.
+- Small uppercase labels for technical metadata.
+
+Use responsive typography with clamp().
+
+Example:
+
+font-size: clamp(2.7rem, 6vw, 5.5rem);
+
+Avoid excessive text sizes on mobile.
+
+---
+
+# 4. WEBSITE ARCHITECTURE
+
+Build a single-page portfolio with smooth scrolling and a responsive navigation system.
+
+Required sections:
+
+1. Navigation.
+2. Hero.
+3. About Me.
+4. Technical Skills.
+5. Featured Projects.
+6. Certifications.
+7. Education.
+8. Experience and Practical Learning.
+9. Contact.
+10. Footer.
+
+Use a consistent maximum content width and responsive spacing system.
+
+Each section should have its own visual identity while remaining part of the same design system.
+
+---
+
+# 5. NAVIGATION BAR
+
+Create a premium floating navigation bar.
+
+Desktop layout:
+
+Left:
+- Minimal logo using "GS" inside a rounded glass container.
+- Text: Ganesh Singh.
+
+Center or right:
+- About.
+- Skills.
+- Projects.
+- Certifications.
+- Education.
+- Contact.
+
+Far right:
+- GitHub icon.
+- LinkedIn icon.
+- "Let's Connect" button.
+
+Requirements:
+
+- Transparent glass background.
+- backdrop-filter: blur(18px).
+- Thin translucent border.
+- Rounded corners.
+- Fixed or sticky positioning.
+- Subtle shadow.
+- Active section indicator.
+- Smooth scrolling.
+- Mobile hamburger menu.
+- Accessible keyboard navigation.
+- Close the mobile menu after selecting a section.
+- Prevent the mobile menu from overflowing the viewport.
+
+The navigation should be compact and elegant.
+
+On mobile, simplify the layout rather than squeezing all links into one row.
+
+External links should open appropriately and use secure rel attributes when opening a new tab.
+
+LinkedIn:
+https://linkedin.com/in/ganesh-singh-68a71837a/
+
+GitHub:
+https://github.com/rajout-codes
+
+---
+
+# 6. HERO SECTION
+
+The hero section is the most important part of the portfolio.
+
+Create a premium, full-width hero occupying approximately 85–95vh on desktop, while allowing natural height on smaller screens.
+
+## Layout
+
+Use a two-column layout on desktop.
+
+Left column:
+- Availability/status indicator.
+- Main heading.
+- Short professional introduction.
+- Primary and secondary CTA buttons.
+- Small social links.
+
+Right column:
+- An elegant AI-inspired visual composition.
+- Floating glass cards.
+- A subtle animated neural network or abstract orbital visualization.
+- Small technical badges.
+
+On mobile, stack the content vertically and prioritize the heading and CTAs.
+
+## Hero text
+
+Small badge:
+
+"M.Sc. Artificial Intelligence Student"
+
+Main heading:
+
+"Building Intelligent Systems for Real-World Problems."
+
+Emphasize "Intelligent Systems" using a subtle violet-to-cyan gradient.
+
+Supporting text:
+
+"I'm Ganesh Singh, an aspiring AI/ML Engineer passionate about Generative AI, intelligent agents, machine learning, and building practical software solutions."
+
+Additional technical line:
+
+"Exploring Machine Learning · Generative AI · Agentic Systems"
+
+Primary CTA:
+
+"Explore My Projects"
+
+This should scroll to the projects section.
+
+Secondary CTA:
+
+"Let's Connect"
+
+This should scroll to the contact section.
+
+Optional third link:
+"View GitHub"
+
+Open:
+https://github.com/rajout-codes
+
+## Hero status indicator
+
+Display a small animated indicator with the text:
+
+"Learning • Building • Innovating"
+
+Do not claim that I am currently available for employment or actively seeking a position unless such a status is explicitly configured.
+
+## Hero visual composition
+
+Build an original CSS-based abstract AI visualization.
+
+Possible elements:
+
+- Central glowing neural-network-inspired orb.
+- Thin orbital rings.
+- Small floating glass panels.
+- Connecting nodes.
+- Subtle grid pattern.
+- Low-intensity violet and cyan glow.
+- Tiny technical labels such as "AI / ML", "GenAI", and "Agentic AI".
+
+Avoid excessive particle effects or heavy animation libraries.
+
+The visual should be elegant rather than distracting.
+
+Do not use a random stock photo of a person.
+
+Do not generate a fake professional portrait.
+
+If no genuine profile photo exists in the repository, create a polished abstract avatar using the initials "GS".
+
+---
+
+# 7. ABOUT ME SECTION
+
+Section heading:
+
+"Curious Mind. Engineering Mindset."
+
+Supporting subtitle:
+
+"Learning the foundations. Building practical solutions. Exploring what's next."
+
+Create a two-column layout.
+
+Left:
+- About text.
+- Academic background.
+- Career interests.
+
+Right:
+- Glassmorphism information cards.
+
+Use the following professional summary as the source of truth:
+
+"I'm an M.Sc. Artificial Intelligence student at Parul University with a background in commerce and a growing technical focus on machine learning, Generative AI, and software development.
+
+Through academic projects, hands-on development, certifications, and industry job simulations, I've been developing practical skills in exploratory data analysis, predictive modelling, AI-powered applications, and agentic AI frameworks.
+
+I'm particularly interested in building intelligent applications that solve real-world problems and combining AI capabilities with reliable software engineering."
+
+Display four information cards:
+
+1. Education
+   M.Sc. Artificial Intelligence
+   Parul University
+
+2. Focus Areas
+   AI / ML · Generative AI · Intelligent Agents
+
+3. Development
+   Python · APIs · Web Applications
+
+4. Current Direction
+   Building and improving AI-powered projects
+
+Use tasteful icons from an icon library.
+
+Do not invent employment history, professional experience, client work, or achievements.
+
+---
+
+# 8. TECHNICAL SKILLS SECTION
+
+Section heading:
+
+"My Technical Toolkit"
+
+Subtitle:
+
+"Tools and technologies I'm learning and applying to build practical solutions."
+
+Create a sophisticated skills dashboard using glass cards.
+
+Organize the skills into categories.
+
+## Category A: Artificial Intelligence and Machine Learning
+
+- Machine Learning Fundamentals
+- Predictive Modelling
+- Exploratory Data Analysis (EDA)
+- Risk Profiling
+- Data Storytelling
+- TF-IDF
+- Cosine Similarity
+- Content-Based Filtering
+- Collaborative Filtering
+
+## Category B: Generative AI and Agentic Systems
+
+- Generative AI
+- LangGraph
+- CrewAI
+- AutoGen
+- BeeAI
+- Model Context Protocol (MCP)
+- AI Chatbot Development
+- Agentic AI Concepts
+
+## Category C: Programming Languages
+
+- Python
+- Java
+- C
+
+## Category D: Web and Backend Development
+
+- Flask
+- Django
+- FastAPI
+- Node.js
+- REST APIs
+
+## Category E: Data and ML Libraries
+
+- Pandas
+- NumPy
+- Scikit-learn
+
+## Category F: Cloud and Tools
+
+- AWS Machine Learning
+- LaTeX
+- Git
+- GitHub
+
+Only show tools and skills that are present in my supplied information or verifiable through the repository.
+
+Do not invent proficiency levels.
+
+Do not add arbitrary percentages such as "Python 95%" or "Machine Learning 90%".
+
+Instead, display skills using attractive icon-based badges and compact labels.
+
+Use subtle hover animations and category-specific accent colors.
+
+Make the layout responsive.
+
+If an icon is unavailable, use a consistent generic technical icon rather than a broken image.
+
+---
+
+# 9. FEATURED PROJECTS SECTION
+
+This section must be one of the strongest parts of the portfolio.
+
+Section heading:
+
+"Projects That Turn Ideas Into Applications"
+
+Subtitle:
+
+"A selection of AI-focused and software development projects."
+
+Create visually rich project cards with:
+
+- Project title.
+- Project category.
+- Short description.
+- Technology stack.
+- Feature highlights.
+- GitHub repository link.
+- Optional live-demo link when a real deployment exists.
+- A custom CSS illustration or abstract project preview.
+- Subtle hover animations.
+- Clear action buttons.
+
+Use a responsive grid with three columns on large desktop screens, two columns on tablets, and one column on mobile.
+
+Keep all cards consistent in spacing and typography.
+
+## PROJECT 1: CINEMATCH AI
+
+Title:
+"CineMatch AI"
+
+Subtitle:
+"Hybrid Movie Recommendation System"
+
+Category:
+"Machine Learning · Recommendation Systems"
+
+Description:
+
+"A personalized movie recommendation application combining content-based filtering and item-based collaborative filtering to generate relevant movie suggestions."
+
+Technologies:
+
+- Python
+- Flask
+- Pandas
+- NumPy
+- Scikit-learn
+- TF-IDF
+- Cosine Similarity
+
+Key features:
+
+- Hybrid recommendation strategy.
+- Genre-based content similarity.
+- Item-based collaborative filtering.
+- Weighted recommendation scoring.
+- Movie search and ratings.
+- REST API integration.
+- Automated API and recommendation tests.
+
+GitHub:
+https://github.com/rajout-codes/CineMatch-AI
+
+Visual direction:
+
+Create an elegant cinematic project card with layered movie-poster placeholders, floating recommendation tiles, and subtle violet accents.
+
+Use real movie poster assets only if available and legally usable. Otherwise, create original abstract poster placeholders.
+
+Do not invent user counts, model accuracy, recommendation quality metrics, or production deployment status.
+
+Primary button:
+"Explore on GitHub"
+
+## PROJECT 2: SMARTBANK AI
+
+Title:
+"SmartBank AI"
+
+Subtitle:
+"AI-Powered Banking Assistant"
+
+Category:
+"Artificial Intelligence · Application Development"
+
+Description:
+
+"An AI-powered banking application designed to support common banking-related interactions through an interactive assistant experience."
+
+Technologies:
+
+- Python
+- AI / ML
+- NLP
+- Backend Development
+
+Key features:
+
+- AI-assisted banking interactions.
+- Interactive assistant experience.
+- Modular application architecture.
+- Integration between AI functionality and backend services.
+
+GitHub:
+https://github.com/rajout-codes/SmartBank-AI
+
+Visual direction:
+
+Use a premium financial dashboard aesthetic with dark glass panels, transaction-inspired abstract elements, and cyan accents.
+
+Do not imply that this application connects to real bank accounts or processes real financial transactions unless verified from the source code.
+
+Primary button:
+"Explore on GitHub"
+
+## PROJECT 3: LEARNING MANAGEMENT SYSTEM
+
+Title:
+"Learning Management System"
+
+Subtitle:
+"Structured Digital Learning Platform"
+
+Category:
+"Web Development · Backend Systems"
+
+Description:
+
+"A web-based Learning Management System focused on organizing learning resources, supporting user activities, and providing a structured learning experience."
+
+Technologies:
+
+- Web Development
+- Backend Development
+- Database Systems
+
+Key features:
+
+- Learning resource organization.
+- Course management functionality.
+- User activity support.
+- Modular application structure.
+- Maintainable backend functionality.
+
+GitHub:
+https://github.com/rajout-codes/lms
+
+Visual direction:
+
+Use a modern education-dashboard design with floating course cards, lesson progress elements, and restrained blue-violet accents.
+
+Do not invent technology stacks, authentication features, student counts, or other capabilities not confirmed by the repository.
+
+Primary button:
+"Explore on GitHub"
+
+## PROJECT CARD INTERACTIONS
+
+When hovering over a project card:
+
+- Slightly elevate the card.
+- Increase border brightness.
+- Add a subtle background glow.
+- Move the project icon slightly.
+- Reveal or emphasize the GitHub action.
+
+Keep animations smooth and short.
+
+Respect reduced-motion accessibility preferences.
+
+On touchscreens, all project actions must remain visible and usable without hover.
+
+## OPTIONAL PROJECT DETAIL EXPERIENCE
+
+If practical, implement a project detail modal or dedicated project page.
+
+Show:
+- Project overview.
+- Problem statement.
+- Approach.
+- Technology stack.
+- Key implementation details.
+- GitHub link.
+
+Use only verified information.
+
+Do not make a button that opens an empty modal or a nonexistent route.
+
+---
+
+# 10. CERTIFICATIONS SECTION
+
+Section heading:
+
+"Certifications & Professional Learning"
+
+Subtitle:
+
+"Structured learning and practical exposure across AI, data analytics, and emerging technologies."
+
+Use elegant credential cards with clear certification titles, issuing organizations, dates where known, and key details.
+
+## Certification 1
+
+Title:
+"AWS Machine Learning"
+
+Provider:
+"FutureSkills Prime / NASSCOM IT-ITeS SSC"
+
+Additional details:
+"Ministry of Electronics & Information Technology, Government of India"
+
+Achievement:
+"Gold Category · Score: 97/100"
+
+Certification ID:
+"FSP/2026/7/10343395"
+
+Date:
+"July 2026"
+
+Use a premium AWS-inspired orange accent sparingly, while maintaining the dark glassmorphism design.
+
+Do not claim that this credential is an AWS-issued certification. Present the issuing organization and certification details accurately.
+
+## Certification 2
+
+Title:
+"GenAI Powered Data Analytics Job Simulation"
+
+Organization:
+"Tata"
+
+Platform:
+"Forage"
+
+Highlights:
+
+- Exploratory data analysis and risk profiling.
+- Predictive modelling for delinquency.
+- Business reporting and data storytelling.
+- AI-driven collections strategy.
+
+Date:
+"July 2026"
+
+## Certification 3
+
+Title:
+"GenAI Job Simulation"
+
+Organization:
+"BCGX"
+
+Platform:
+"Forage"
+
+Highlights:
+
+- Data extraction and initial analysis.
+- Development of an AI-powered financial chatbot.
+
+Date:
+"July 2026"
+
+## Certification 4
+
+Title:
+"IBM Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI"
+
+Provider:
+"Coursera"
+
+Display the title and provider without inventing a completion date or credential ID.
+
+## Certification 5
+
+Title:
+"Model Context Protocol"
+
+Provider:
+"Coursera"
+
+Display the title and provider without inventing a completion date or credential ID.
+
+## Certification 6
+
+Title:
+"LaTeX Training"
+
+Provider:
+"Edu Pyramids · SINE · IIT Bombay"
+
+Score:
+"83.89/100"
+
+Do not invent credential links.
+
+If a certificate verification URL is not supplied, do not create a fake verification button.
+
+Use a compact, attractive grid with subtle icons, issuer labels, and clear hierarchy.
+
+---
+
+# 11. EDUCATION SECTION
+
+Section heading:
+
+"Education"
+
+Use a vertical timeline on desktop, adapting to a stacked layout on mobile.
+
+## Education 1
+
+Institution:
+"Parul University"
+
+Location:
+"Vadodara, Gujarat, India"
+
+Degree:
+"M.Sc. Artificial Intelligence — PICA"
+
+Duration:
+"2025 – Present"
+
+CGPA:
+"7.45 / 10"
+
+## Education 2
+
+Institution:
+"S.B. College"
+
+Location:
+"Ara, Bihar, India"
+
+Degree:
+"B.Com. Accounting"
+
+Study mode:
+"Full Time"
+
+Percentage:
+"65.20%"
+
+Do not invent a completion year.
+
+## Education 3
+
+Institution:
+"Maharaja College"
+
+Degree:
+"12th Standard — BSEB"
+
+Year:
+"2022"
+
+Percentage:
+"74%"
+
+## Education 4
+
+Institution:
+"H N K High School"
+
+Degree:
+"10th Standard — BSEAP"
+
+Year:
+"2020"
+
+Percentage:
+"62%"
+
+Use understated timeline connectors, glassmorphism cards, and small academic icons.
+
+Do not make academic scores the main visual focus.
+
+---
+
+# 12. EXPERIENCE AND PRACTICAL LEARNING
+
+Section heading:
+
+"Practical Learning & Industry Simulations"
+
+Present this section honestly as practical learning and job simulations, not as paid employment or formal work experience.
+
+Create two premium cards.
+
+## Tata — GenAI Powered Data Analytics Job Simulation
+
+Platform:
+"Forage"
+
+Description:
+
+"Applied data analytics and AI concepts to a simulated business problem."
+
+Highlights:
+
+- Conducted exploratory data analysis.
+- Performed risk profiling.
+- Developed predictive modelling workflows.
+- Prepared business reporting and data storytelling deliverables.
+- Explored AI-assisted collections strategy.
+
+## BCGX — GenAI Job Simulation
+
+Platform:
+"Forage"
+
+Description:
+
+"Explored data analysis and AI-powered financial chatbot development through a job simulation."
+
+Highlights:
+
+- Data extraction and initial analysis.
+- AI-powered financial chatbot development.
+
+Use professional visual hierarchy and clear simulation labels.
+
+Do not add employer logos unless they can be sourced reliably and used appropriately.
+
+---
+
+# 13. CONTACT SECTION
+
+Section heading:
+
+"Let's Build Something Intelligent."
+
+Supporting text:
+
+"I'm interested in AI, machine learning, Generative AI, and software engineering. Explore my work or connect with me to discuss ideas and opportunities."
+
+Create a premium contact area with a glassmorphism panel.
+
+Contact information:
+
+Name:
+Ganesh Singh
+
+Location:
+Vadodara, Gujarat, India
+
+Email:
+gs2876756@gmail.com
+
+LinkedIn:
+https://linkedin.com/in/ganesh-singh-68a71837a/
+
+GitHub:
+https://github.com/rajout-codes
+
+## Contact actions
+
+Primary button:
+"Email Me"
+
+Use:
+mailto:gs2876756@gmail.com
+
+Secondary button:
+"Connect on LinkedIn"
+
+Use the LinkedIn profile URL.
+
+Additional button:
+"View GitHub"
+
+Use the GitHub profile URL.
+
+Include copy-email functionality if implemented reliably.
+
+Display a small success message after copying the email address.
+
+Do not create a contact form that pretends to send messages without a working backend or email integration.
+
+If a form is included, connect it to a real service only when configured. Otherwise, prefer direct email and social links.
+
+---
+
+# 14. FOOTER
+
+Create a minimal premium footer.
+
+Display:
+
+"Designed & built by Ganesh Singh."
+
+Supporting text:
+
+"Exploring AI. Building useful things."
+
+Include:
+- GitHub.
+- LinkedIn.
+- Email.
+
+Display the current year dynamically.
+
+Add a subtle back-to-top button.
+
+Use a thin border and understated typography.
+
+---
+
+# 15. ANIMATION AND INTERACTION SYSTEM
+
+Use animations carefully to enhance the experience.
+
+Required interactions:
+
+1. Smooth anchor scrolling.
+2. Navigation active-state updates.
+3. Subtle section entrance animations.
+4. Project card hover effects.
+5. Button hover and press feedback.
+6. Animated hero background.
+7. Gentle floating motion for selected decorative elements.
+8. Mobile navigation transitions.
+9. Back-to-top button.
+10. Copy-email interaction if implemented.
+
+Use CSS transitions and IntersectionObserver where appropriate.
+
+Preferred animation timing:
+- Hover interactions: 180–280ms.
+- Section entrances: 400–650ms.
+- Small floating effects: slow and subtle.
+
+Avoid excessive movement, constant flashing, aggressive parallax, or animation on every element.
+
+Respect:
+
+@media (prefers-reduced-motion: reduce)
+
+When reduced motion is enabled, disable nonessential animation and smooth scrolling.
+
+Keep the website functional even if animations fail or JavaScript is disabled where reasonable.
+
+---
+
+# 16. TECHNICAL IMPLEMENTATION (NEXTJS APP)
+
+First inspect the repository.
+
+If a React application already exists, preserve its framework and conventions.
+
+If starting from scratch, use the following preferred stack:
+
+- NextJS (React).
+- TypeScript.
+- Tailwind CSS nextjs compitable.
+- Lucide React for icons.
+- CSS variables for the design system.
+- Framer Motion only if the project benefits from it and the dependency is appropriate.
+
+Do not introduce unnecessary dependencies.
+
+Use semantic, reusable components.
+
+Suggested component structure:
+
+src/
+  components/
+    Navbar.tsx
+    Hero.tsx
+    About.tsx
+    Skills.tsx
+    Projects.tsx
+    ProjectCard.tsx
+    Certifications.tsx
+    Education.tsx
+    Experience.tsx
+    Contact.tsx
+    Footer.tsx
+    SectionHeading.tsx
+  data/
+    portfolio.ts
+  hooks/
+    useActiveSection.ts
+  styles/
+    globals.css
+  App.tsx
+  main.tsx
+
+Adapt this structure to the existing repository if needed.
+
+Store portfolio content in a centralized data file where practical.
+
+Use reusable project, skill, certification, and education components.
+
+Do not duplicate large blocks of JSX.
+
+## CODE QUALITY
+
+Requirements:
+
+- Strict TypeScript typing.
+- No avoidable use of `any`.
+- No broken imports.
+- No missing React keys.
+- No console errors.
+- No unnecessary rerenders.
+- No hardcoded fake links.
+- No placeholder buttons that do nothing.
+- No unnecessary backend.
+- No exposure of secrets or API keys.
+- No unnecessary local storage.
+- No broken external image dependencies.
+
+Keep the project easy to maintain and update.
+
+---
+
+# 17. RESPONSIVE DESIGN
+
+The website must work well at:
+
+- 320px mobile width.
+- 375px mobile width.
+- 430px mobile width.
+- 768px tablet width.
+- 1024px laptop width.
+- 1440px desktop width.
+- 1920px wide desktop width.
+
+Requirements:
+
+- No horizontal scrolling.
+- No clipped headings.
+- No overflowing cards.
+- No broken navigation.
+- Appropriate touch target sizes.
+- Responsive images and decorative visuals.
+- Readable text on all screen sizes.
+- Correct stacking order on mobile.
+- Responsive project grid.
+- Accessible mobile menu.
+
+Avoid using fixed heights on content sections when they could cause clipping.
+
+Use a consistent spacing system.
+
+Test mobile and desktop layouts separately.
+
+---
+
+# 18. ACCESSIBILITY
+
+Follow practical WCAG accessibility principles.
+
+Implement:
+
+- Semantic HTML.
+- Logical heading hierarchy.
+- Visible keyboard focus indicators.
+- Accessible button names.
+- Sufficient color contrast.
+- Keyboard-operable navigation.
+- Descriptive link text.
+- Appropriate aria attributes.
+- Accessible mobile menu behavior.
+- Reduced-motion support.
+- Meaningful alternative text for informative images.
+
+Decorative backgrounds should be hidden from assistive technologies where appropriate.
+
+Do not rely only on color to communicate active states or important information.
+
+---
+
+# 19. PERFORMANCE OPTIMIZATION
+
+Optimize the website for fast loading.
+
+Requirements:
+
+- Avoid unnecessarily large dependencies.
+- Avoid loading oversized images.
+- Use CSS for simple illustrations.
+- Lazy-load noncritical images.
+- Avoid unnecessary animation loops.
+- Prevent layout shifts.
+- Use efficient component rendering.
+- Avoid excessive blur over large areas.
+- Keep mobile performance in mind.
+
+Glassmorphism can be expensive to render, so limit backdrop filters to important surfaces.
+
+Provide readable fallback backgrounds when backdrop-filter is unsupported.
+
+Aim for strong Lighthouse scores without compromising accessibility or usability.
+
+---
+
+# 20. SEO AND SOCIAL SHARING
+
+Implement:
+
+Page title:
+"Ganesh Singh | AI/ML Engineer Portfolio"
+
+Meta description:
+"Explore Ganesh Singh's AI and machine learning portfolio, featuring Generative AI, agentic AI frameworks, machine learning projects, certifications, and software development."
+
+Add:
+
+- Appropriate canonical URL only when a real production domain is configured.
+- Open Graph metadata.
+- Twitter/X card metadata.
+- Theme color.
+- Favicon using a simple GS monogram.
+- Descriptive page title.
+- Proper heading structure.
+
+Do not invent a production domain.
+
+Do not add fake structured data or misleading professional credentials.
+
+---
+
+# 21. PROJECT FUNCTIONALITY AND CONTENT ACCURACY
+
+Use the supplied personal information as the source of truth.
+
+The website must display:
+
+Name:
+Ganesh Singh
+
+Location:
+Vadodara, Gujarat, India
+
+Current education:
+M.Sc. Artificial Intelligence — Parul University
+
+GitHub:
+https://github.com/rajout-codes
+
+LinkedIn:
+https://linkedin.com/in/ganesh-singh-68a71837a/
+
+Email:
+gs2876756@gmail.com
+
+Do not invent:
+
+- Employment history.
+- Professional job titles implying previous employment.
+- Awards beyond the supplied certifications.
+- Model accuracy scores.
+- User counts.
+- Production deployments.
+- Client names.
+- Live application URLs.
+- Certificate verification links.
+- Project capabilities not supported by the supplied information or actual repositories.
+
+If a technical detail is uncertain, inspect the relevant GitHub repository when access is available. Otherwise, use the supplied project description.
+
+Present me as a student and aspiring engineer with practical projects and industry job simulations.
+
+Use "Aspiring AI/ML Engineer" rather than claiming a professional position I have not established.
+
+---
+
+# 22. FINAL VISUAL POLISH
+
+Before considering the website finished, check the following:
+
+- The hero looks premium immediately.
+- Typography is consistent.
+- The content has sufficient breathing room.
+- Glass surfaces remain readable.
+- Cards have consistent radii and padding.
+- Buttons have clear interaction states.
+- Icons have consistent sizing.
+- The background is visually interesting without being distracting.
+- Accent colors are used consistently.
+- Sections are visually differentiated.
+- The projects receive strong visual emphasis.
+- Certifications look credible and professional.
+- The mobile layout feels intentionally designed.
+- No unnecessary decorative elements compete with the content.
+
+Use rounded corners consistently, generally between 14px and 24px for cards.
+
+Use subtle one-pixel borders.
+
+Use restrained shadows and glows.
+
+Avoid excessive gradients, giant empty spaces, and overused glass cards.
+
+---
+
+# 23. TESTING AND COMPLETION
+
+After implementing the website:
+
+1. Install missing dependencies only when needed.
+2. Run the development server.
+3. Verify that the application builds successfully.
+4. Fix TypeScript errors.
+5. Fix runtime errors.
+6. Test navigation links.
+7. Test every project GitHub link.
+8. Test the email link.
+9. Test LinkedIn and GitHub profile links.
+10. Test the mobile navigation.
+11. Verify that all sections render correctly.
+12. Inspect the responsive layout.
+13. Check for horizontal overflow.
+14. Verify that there are no empty placeholder buttons.
+15. Check browser console errors.
+16. Run available linting and build commands.
+17. If browser preview tools are available, inspect the actual rendered page and correct visual defects.
+
+Do not claim that a test passed unless it was actually executed.
+
+If a test cannot be performed, clearly state that limitation.
+
+---
+
+# 24. FINAL DELIVERABLE
+
+Deliver a fully implemented personal portfolio website, not merely a plan.
+
+At completion, provide a concise summary of:
+
+- Features implemented.
+- Technology stack used.
+- Main files created or updated.
+- Commands to run the website locally.
+- Build and test results.
+- Any remaining setup requirements.
+
+Prioritize a cohesive, premium design and working functionality over adding unnecessary features.
+
+The final result should look like a portfolio built by a skilled frontend engineer with a strong understanding of modern AI products and contemporary UI/UX design.
+
+Start by inspecting the repository and then implement the complete website.
